@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Drinking Water Treatment in Oman | AL WEJHA GROUP</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Quicksand:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" href="./drinking-water-treatment-oman.webp" type="image/webp">
+  <style>
+    :root {
+      --pure-blue: #0077b6;
+      --clean-teal: #48cae4;
+      --fresh-green: #00b4d8;
+      --crisp-white: #f8f9fa;
+      --deep-blue: #023e8a;
+    }
+    
+    body {
+      font-family: 'Noto Sans', sans-serif;
+      background-color: var(--crisp-white);
+      margin: 0;
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    header {
+      background: linear-gradient(135deg, var(--pure-blue), var(--deep-blue));
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    header::after {
+      content: "";
+      position: absolute;
+      bottom: -50px;
+      left: 0;
+      right: 0;
+      height: 100px;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path fill="%23f8f9fa" d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25"></path><path fill="%23f8f9fa" d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5"></path><path fill="%23f8f9fa" d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"></path></svg>');
+      background-size: cover;
+      z-index: 1;
+    }
+    
+    header h1 {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 2.8rem;
+      margin: 0 0 15px;
+      position: relative;
+      z-index: 2;
+    }
+    
+    /* Water Drop Navigation */
+    nav {
+      background-color: white;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    nav a {
+      margin: 0 15px;
+      color: var(--deep-blue);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 10px 0;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    
+    nav a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--clean-teal);
+      transition: width 0.3s ease;
+    }
+    
+    nav a:hover::after {
+      width: 100%;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .hero-img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin: 60px 0 40px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+      border: 1px solid rgba(0,0,0,0.08);
+    }
+    
+    .water-drop {
+      width: 60px;
+      height: 60px;
+      background: var(--clean-teal);
+      border-radius: 50% 50% 50% 50%/60% 60% 40% 40%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      margin-right: 15px;
+    }
+    
+    .treatment-methods {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin: 60px 0;
+    }
+    
+    .method-card {
+      background: white;
+      border-radius: 8px;
+      padding: 30px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+      border-top: 4px solid var(--clean-teal);
+    }
+    
+    .method-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    }
+    
+    /* Water Wave CTA Section */
+    .cta-section {
+      background: linear-gradient(135deg, var(--pure-blue), var(--deep-blue));
+      color: white;
+      padding: 60px 20px;
+      margin: 60px 0;
+      border-radius: 8px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .cta-section::before {
+      content: "";
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      width: 150px;
+      height: 150px;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="%23ffffff10"><path d="M20,20 L80,20 L80,80 L20,80 Z"/><circle cx="50" cy="50" r="15"/></svg>');
+      background-size: contain;
+    }
+    
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      background-color: var(--fresh-green);
+      color: white;
+      padding: 14px 30px;
+      text-decoration: none;
+      border-radius: 50px;
+      margin: 10px 10px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    
+    .cta-button:hover {
+      background-color: var(--clean-teal);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    
+    footer {
+      background: linear-gradient(to right, var(--deep-blue), var(--pure-blue));
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+    
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      
+      .hero-img {
+        height: 350px;
+      }
+      
+      .treatment-methods {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>Drinking Water Treatment in Oman</h1>
+    <p>Pure water solutions meeting Omani quality standards</p>
+  </header>
+
+  <!-- Water Drop Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="https://www.alwejhagroup.com/"><i class="fas fa-home"></i> Home</a>
+      <a href="https://www.alwejhagroup.com/area-of-expertise"><i class="fas fa-cogs"></i> Expertise</a>
+      <a href="https://www.alwejhagroup.com/our-services"><i class="fas fa-tools"></i> Services</a>
+      <a href="https://www.alwejhagroup.com/our-clients"><i class="fas fa-users"></i> Clients</a>
+      <a href="https://www.alwejhagroup.com/contact"><i class="fas fa-envelope"></i> Contact</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <!-- Hero Image -->
+    <img class="hero-img" 
+         src="./drinking-water-treatment-oman.webp" 
+         alt="Drinking water treatment plant in Oman"
+         loading="eager">
+
+    <section>
+      <h2><span class="water-drop"><i class="fas fa-tint"></i></span> Potable Water Treatment Solutions</h2>
+      <p>AL WEJHA GROUP designs and installs complete drinking water treatment systems across Oman, ensuring compliance with Omani Standard OS 8/1 for drinking water quality.</p>
+      
+      <div class="treatment-methods">
+        <div class="method-card">
+          <h3>Filtration Systems</h3>
+          <ul>
+            <li>Multi-media filtration</li>
+            <li>Activated carbon filtration</li>
+            <li>Ultrafiltration membranes</li>
+          </ul>
+        </div>
+        
+        <div class="method-card">
+          <h3>Disinfection</h3>
+          <ul>
+            <li>UV sterilization systems</li>
+            <li>Ozone treatment</li>
+            <li>Chlorination dosing</li>
+          </ul>
+        </div>
+        
+        <div class="method-card">
+          <h3>Reverse Osmosis</h3>
+          <ul>
+            <li>Brackish water RO</li>
+            <li>Post-treatment mineralization</li>
+            <li>Energy recovery systems</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <h2>Need Clean Drinking Water Solutions?</h2>
+      <p>Contact our water treatment specialists today</p>
+      <div>
+        <a href="https://wa.me/96879271055" class="cta-button"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <a href="tel:+96879271055" class="cta-button"><i class="fas fa-phone"></i> Call +968 7927 1055</a>
+        <a href="mailto:water@alwejhagroup.com" class="cta-button"><i class="fas fa-envelope"></i> Email</a>
+      </div>
+    </section>
+
+    <section>
+      <h2><span class="water-drop"><i class="fas fa-check"></i></span> Quality Assurance</h2>
+      <ul>
+        <li>Daily water quality testing</li>
+        <li>Automated monitoring systems</li>
+        <li>Ministry of Health compliance</li>
+        <li>24/7 technical support</li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 AL WEJHA GROUP | Water Treatment Division</p>
+    <p><a href="https://www.alwejhagroup.com" style="color:white;">Visit Main Website</a> | Serving all regions of Oman</p>
+  </footer>
+</body>
+</html>
